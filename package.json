@@ -1,0 +1,15 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": " code with nayan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nayan",
+    "backend"
+  ],
+  "author": "Nayan k. vaghela",
+  "license": "ISC"
+}
