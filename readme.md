@@ -1,0 +1,15 @@
+ // # 
+-> first create npm file (nodefile)
+- .env create
+- .gitignore and add gitignore code -> [ gitignoregenetor](https://mrkandreev.name/snippets/gitignore-generator/#Node)
+- add in github
+    -> git init
+    ->git add .
+    ->git commit -m "first commit"
+    ->git branch -M main
+    -> add remote
+    -> git push -u origin main
+-> create js file in srs
+-> add type of module js in json file because module js  provie consitency
+->  install dev depedenacy (nodemon) because if u will change any point in server all time server restart is important .depedeancy are two type one is main and second is devlopment (dev). use second because main production ma problem na kare 
+-> after  install add dev command in json file
