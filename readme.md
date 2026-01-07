@@ -41,4 +41,14 @@
 
     Quotes: Fix kari deshe ke badhe 'single' vaparvu ke "double".
    (npm i -D prettier )
-- add prettierc filee use prettier extension   
+- add prettierc filee use prettier extension
+
+# data base connetion 
+- download mongoose ya use online website atlas mongoose
+ - create cluster
+ - add ip address 0.0.0.0/0
+ - add user and passaword create user and  
+ - go to databaseaccess through menu connection and get uri
+-  go to .env  add port and mongoo uri
+- install package npm i mongoose ,npm i dotenv ,npm i express
+- go to index.js 
