@@ -1,20 +1,36 @@
 //require('dotenv').config({path:'./db/index.js'}) // use becuse env variable japti load thay jay . jena karane producation ma isu nave pan aa rite aane use karva ma nathi aavtu kem code contesitency jalvati nathi
  import dotenv from "dotenv";
- //import connectDB from "./db/index.js"
+ import connectDB from "./db/index.js"
+import express from "express";
+const app =express(); 
 
 dotenv.config({
   path: './env'
 })
-//connectDB()
+
+connectDB().then(()=>{
+  app.listen( process.env.PORT || 8000,()=>{
+   console.log(` Server is running at port : ${process.env.PORT}`);
+   
+  })
+}).catch((err)=>{
+  console.log("MONGO db connection failed !!!",err);
+   
+})
+
 
 
 // 1. this is db file throgh
+/*
 // 2.
+import dotenv from "dotenv";
 import mongoose from "mongoose";
 import { DB_NAME } from "./constant.js";
 import express from "express";
 const app =express(); 
-
+dotenv.config({
+  path: './env'
+})
 
  ;(async () => {
     try {
@@ -37,4 +53,4 @@ const app =express();
     }
     
  })(); // () aena vina async run nai thay
-    
+    */
